@@ -1,25 +1,44 @@
-import * as S from "./styles"
+import * as S from "./styles";
+import Logo from "../../assets/logo-course.png";
+import { Button } from "../Button/styles";
 
-
-
-
-
-export function Header(){
-    return (
-        <>
-            <S.ContainerHeader>
-                <S.LogoHeader/>
-                <S.ListaHeader default>
-                    <S.ItemLista>Home</S.ItemLista>
-                    <S.ItemLista>Traks</S.ItemLista>
-                    <S.ItemLista>Courses</S.ItemLista>
-                    <S.ItemLista>Workshops</S.ItemLista>
-                </S.ListaHeader>
-                <S.ListaHeader>
-                    <S.Button >Sign</S.Button>
-                    <S.Button primary default>Sign up</S.Button>
-                </S.ListaHeader>
-            </S.ContainerHeader>
-        </>
-    )
+export function Header() {
+  return (
+    <>
+      <S.ContainerHeader>
+        <S.LogoHeader src={Logo} />
+        <S.ListaHeader default>
+          <S.ItemLista>🏠 Home</S.ItemLista>
+          <S.ItemLista>
+            <S.SelectHeader>
+              <S.OptionSelect hidden>🛤️ Tracks</S.OptionSelect>
+              <S.OptionSelect>Front</S.OptionSelect>
+              <S.OptionSelect>Back</S.OptionSelect>
+              <S.OptionSelect>Devops</S.OptionSelect>
+              <S.OptionSelect>DBA</S.OptionSelect>
+            </S.SelectHeader>
+          </S.ItemLista>
+          <S.ItemLista>
+            <S.SelectHeader>
+              <S.OptionSelect hidden>📚 Courses</S.OptionSelect>
+              <S.OptionSelect>Python</S.OptionSelect>
+              <S.OptionSelect>Javascript</S.OptionSelect>
+              <S.OptionSelect>MySQL</S.OptionSelect>
+              <S.OptionSelect>PHP</S.OptionSelect>
+              <S.OptionSelect>Java</S.OptionSelect>
+            </S.SelectHeader>
+          </S.ItemLista>
+          <S.ItemLista>🏬 Workshops</S.ItemLista>
+        </S.ListaHeader>
+        <S.ListaHeader>
+          <Button cursor='pointer' primary="#00D395" defaultSize>
+            Sign up
+          </Button>
+          <Button cursor='pointer' primary="#fff" default defaultSize>
+            Sign in
+          </Button>
+        </S.ListaHeader>
+      </S.ContainerHeader>
+    </>
+  );
 }

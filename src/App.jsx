@@ -1,4 +1,5 @@
 import { Header } from "./components/Header"
+import { Section } from "./components/Section"
 import { GlobalStyle } from "./global/stylesGlobal"
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <GlobalStyle/>
       <Header/>
+      <Section/>
     </>
   )
 }
