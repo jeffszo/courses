@@ -1,20 +1,13 @@
-import { Header } from "./components/Header"
-import { Section } from "./components/Section"
-import { GlobalStyle } from "./global/stylesGlobal"
-
-
-
+import { GlobalStyle } from "./global/stylesGlobal";
+import { Home } from "./pages/Home";
 
 function App() {
-
-
   return (
     <>
-      <GlobalStyle/>
-      <Header/>
-      <Section/>
+      <GlobalStyle />
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
