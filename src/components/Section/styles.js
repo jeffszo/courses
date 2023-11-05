@@ -7,10 +7,14 @@ export const ContainerSection = styled.section`
     background-color: #111111;
     display: flex;
     align-items: center;
+    border: black;
 
     @media(max-width: 997px){
         flex-direction: column;
     }
+    
+
+
 `
 
 export const ContainerText = styled.div`
@@ -56,6 +60,8 @@ export const ContainerButton = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+    border: black;
+
 `
 
 export const Strong = styled.strong`
@@ -73,3 +79,5 @@ export const WatchPlay = styled(BsFillPlayCircleFill)`
         transition: 0.2s all ease-in;
     }
 `
+
+

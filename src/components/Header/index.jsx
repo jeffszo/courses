@@ -34,7 +34,15 @@ export function Header() {
           <Button cursor='pointer' primary="#00D395" defaultSize>
             Sign up
           </Button>
-          <Button cursor='pointer' primary="#fff" default defaultSize>
+          <Button 
+            cursor='pointer' 
+            primary="#fff" 
+            default 
+            defaultSize
+            style={{
+              
+            }}
+            >
             Sign in
           </Button>
         </S.ListaHeaderButton>
