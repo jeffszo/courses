@@ -17,7 +17,7 @@ export function Section() {
         In the ever-evolving landscape of technology, developers seek knowledge and innovation. Enter Learnovation, a dynamic platform designed to fuel growth and learning for developers worldwide.
         </S.Paragraph>
         <S.ContainerButton>
-          <Button cursor='pointer' width="200px" primary="#00D395" alternative="0.7rem">
+          <Button cursor='pointer' width="170px" primary="#00D395" alternative="0.7rem">
             Get started
           </Button>
           <Button cursor='default' gap="0.5rem" primary="#111111">

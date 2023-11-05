@@ -11,8 +11,9 @@ export const ContainerSection = styled.section`
 
     @media(max-width: 997px){
         flex-direction: column;
+        height: 100%;
     }
-    
+
 
 
 `
@@ -61,6 +62,7 @@ export const ContainerButton = styled.div`
     align-items: center;
     gap: 1rem;
     border: black;
+    
 
 `
 
